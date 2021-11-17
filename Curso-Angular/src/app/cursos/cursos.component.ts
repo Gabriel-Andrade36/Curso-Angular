@@ -10,10 +10,10 @@ export class CursosComponent implements OnInit {
   nomePortal: string;
   cursos: Array<string> = [];
 
-  constructor() {
+  constructor(private cursosService: CursosService) {
     this.nomePortal = 'http://loiane.training';
 
-    var servico = new CursosService();
+    this.cursos = cursosService.getCursos();
   }
 
   ngOnInit(): void {}
