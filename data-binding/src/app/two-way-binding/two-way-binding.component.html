@@ -1,0 +1,22 @@
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+
+    <div>
+
+      <input type="text" [(ngModel)]="content">
+      <input type="text" [(ngModel)]="content">
+      <input type="text" [(ngModel)]="content">
+      <p>O conteúdo que foi inserido é: {{content}}</p>
+    </div>
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <input type="text" [(ngModel)]="pessoa.idade">
+      <input type="text" [(ngModel)]="pessoa.altura">
+      <input type="text" [(ngModel)]="pessoa.profissao">
+
+      <p>Meu nome é {{pessoa.nome}} tenho {{pessoa.idade}} anos e {{pessoa.altura}} de altura e sou
+        {{pessoa.profissao}}</p>
+    </div>
+  </article>
+</section>
