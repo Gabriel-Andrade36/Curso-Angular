@@ -15,7 +15,7 @@
     <img bind-src="urlImagem3">
 
   </article> -->
-
+  <!--
   <article>
     <h3>Class e Style Binding</h3>
     <div>
@@ -31,7 +31,7 @@
 
 
     <div class="alert {{ classe.value }}">Texto colorido conforme valor do combobox.</div>
-    <!--Conforme o value dado ao #classe do selector acima o mesmo é lido e dado como classe-->
+    Conforme o value dado ao #classe do selector acima o mesmo é lido e dado como classe
 
     <div class="alert" role="alert" [class.alert-success]="classe.value =='alert-success'">Sucesso </div>
     <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
@@ -43,6 +43,23 @@
       Esse erro só aparece em caso de erro</div>
 
 
+  </article>
+
+ -->
+
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button class="btn btn-primary" (click)="buttonOnClick()">Me clique!</button>
+    </div>
+    <br>
+    <input type="text" (keyup)="onKeyPress($event)" (keyup.enter)="saveValue(inputValor.value)"
+      (blur)="saveValue(inputValor.value)" #inputValor>
+    <p>{{ 'Valor Atual: ' + pressedKeys}}</p>
+    <p>{{'Valor Salvo: ' + savedValue}}</p>
+
+    <p (mouseover)="eventMouseOverOut()" (mouseout)="eventMouseOverOut()" [class.highlight]="isMouseOver">Passe o mouse
+      sobre mim</p>
   </article>
 
 </section>
