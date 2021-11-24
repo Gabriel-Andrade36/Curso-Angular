@@ -18,7 +18,10 @@ export class DataBindingComponent implements OnInit {
   cursoAngular: boolean = true;
   pressedKeys: string = '';
   savedValue: string = '';
+
   isMouseOver: boolean = false;
+
+  nomeDoCurso: string = 'Angular';
 
   urlImagem1: String = 'http://lorempixel.com.br/500/420/?1';
   urlImagem2: String = 'http://lorempixel.com.br/500/420/?2';

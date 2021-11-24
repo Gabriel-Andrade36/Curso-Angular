@@ -61,10 +61,19 @@
     <p (mouseover)="eventMouseOverOut()" (mouseout)="eventMouseOverOut()" [class.highlight]="isMouseOver">Passe o mouse
       sobre mim</p>
 
-
-
     </section>
 
   </article> -->
 
-  <app-two-way-binding></app-two-way-binding>
+  <!-- <app-two-way-binding></app-two-way-binding> -->
+
+  <section class="input-output-properties">
+
+    <article>
+      <h3>
+        Input/Output Properties
+      </h3>
+    </article>
+
+    <input-property [nome]="nomeDoCurso"></input-property>
+  </section>
