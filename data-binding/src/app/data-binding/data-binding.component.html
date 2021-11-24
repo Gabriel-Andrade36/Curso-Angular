@@ -76,4 +76,6 @@
     </article>
 
     <input-property [nome]="nomeDoCurso"></input-property>
+
+    <output-property [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></output-property>
   </section>
