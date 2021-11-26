@@ -1,0 +1,50 @@
+<!-- <h3>Style binding</h3>
+<input type="text" [(ngModel)]="tamanho">
+<br>
+<button [style.backgroundColor]="ativo ? 'black' : 'white'" [style.color]="ativo ? 'white' : 'black'"
+  [style.fontSize]="tamanho + 'px'" (click)=" mudar()">Mudar com style-binding</button>
+
+<button [ngStyle]="{
+  'backgroundColor':ativo ? 'black' : 'white',
+  'color': ativo ? 'white':'black',
+  'fontSize': tamanho + 'px'}
+" (click)="mudar()">Mudar com ngStyle</button> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="text" [(ngModel)]="tamanho" [style.fontSize]="tamanho + 'px'">
+
+<button [ngStyle]="{
+  'backgroundColor':ativo ? 'blue' : 'white',
+  'fontSize': tamanho + 'px'
+}" (click)="mudar()">Só testando</button>
